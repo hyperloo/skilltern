@@ -45,6 +45,7 @@ body{
     color: rgba(255,255,255,0) !important;
 }
 form{
+    position: absolute;
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;

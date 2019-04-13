@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SkillEdu</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="sentence">
+        <div id="empty">
+
+        </div>
+        <div id="line">
+            <p class="show"></p>
+            <div class="hide"></div> 
+        </div>
+        <div id="fro">
+            <form>
+                  <input type="text" placeholder="Your Name" name="uname" required>
+                  <input type="text" placeholder="Email Address" required>
+                  <input type="text" placeholder="Phone Number" required>
+                  <button type="submit">Get UpSkilled!</button>            
+              </form>
+        </div>
+    </div>
+
+    <script>
+        var text = "The Skills you need to score an internship.",
+        soFar = "";
+
+        var visible = document.querySelector(".show"),
+            invisible = document.querySelector(".hide");
+
+        invisible.innerHTML = text;
+        var t = setInterval(function(){
+        soFar += text.substr(0, 1),
+        text = text.substr(1);
+
+        visible.innerHTML = soFar;
+        invisible.innerHTML = text;
+
+        if (text.length === 0) clearInterval(t);
+        }, 60)
+
+    </script>
+</body>
+</html>

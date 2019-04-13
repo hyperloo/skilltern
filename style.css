@@ -43,6 +43,7 @@ body{
 }
 .hide{
     color: rgba(255,255,255,0) !important;
+    display:none;
 }
 form{
     position: absolute;

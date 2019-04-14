@@ -9,8 +9,10 @@
     
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
-<body>
-    
+<body onload="myFunction()">
+    <div id="loader">
+
+    </div>
     <div class="sentence">
         <div id="empty">
 
@@ -30,6 +32,10 @@
     </div>
     <script>
 
+        var preloader = document.getElementById('loader');
+        function myFunction(){
+            preloader.style.display = 'none';
+        }
         
         var text = " Get The Skills you need to score an internship. ",
         soFar = "";

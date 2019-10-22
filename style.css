@@ -26,7 +26,7 @@ body{
 }
 
 #empty{
-    display:none;
+    display:none !important;
 }
 .sentence div p{
     padding-left:auto;
@@ -207,7 +207,7 @@ input[type=text]:hover ,input[type=text]:active{
     }  
 }
 
-@media (min-width: 992px) and (max-width:1999.98px){
+@media (min-width: 992px) and (max-width:1999.985px){
     .sentence{
       display:flex;
       flex-wrap: wrap;
